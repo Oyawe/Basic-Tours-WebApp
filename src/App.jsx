@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Loading from "./Loading";
+import Tours from "./Tours";
 
 const url = "https://course-api.com/react-tours-project";
 
@@ -31,6 +32,12 @@ const App = () => {
     );
   }
 
-  return <h2>Tours Starter</h2>;
+  //TODO
+
+  return (
+    <main>
+      <Tours tours={tours} />
+    </main>
+  );
 };
 export default App;
